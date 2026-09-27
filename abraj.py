@@ -2,7 +2,9 @@ import os, random
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = os.environ.get("TOKEN") or "8686823225:AAGtYeTpOHChKYaQMg1TFbk_y8LXAkFnaYs"
+TOKEN = os.getenv("TOKEN")
+
+
 
 abraj = {
     "الحمل": ["نهارك فيه حماس", "طاقة كبيرة"],
